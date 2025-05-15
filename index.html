@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -20,6 +19,40 @@
       })(window,document,'script','dataLayer','GTM-KDHK53PF');
     </script>
     <!-- End Google Tag Manager -->
+
+    <!-- Google Analytics tag -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-9EQJEC70P1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-9EQJEC70P1');
+    </script>
+
+    <!-- Meta Pixel Code -->
+    <script>
+      !function(f,b,e,v,n,t,s){
+        if(f.fbq)return;n=f.fbq=function(){
+          n.callMethod? n.callMethod.apply(n,arguments):n.queue.push(arguments)
+        };
+        if(!f._fbq)f._fbq=n;
+        n.push=n;
+        n.loaded=!0;
+        n.version='2.0';
+        n.queue=[];
+        t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)
+      }(window, document,'script','https://connect.facebook.net/en_US/fbevents.js');
+
+      fbq('init', 'YOUR_PIXEL_ID');  // Replace with your Meta Pixel ID
+      fbq('track', 'PageView');
+    </script>
+    <noscript>
+      <img height="1" width="1" style="display:none"
+           src="https://www.facebook.com/tr?id=YOUR_PIXEL_ID&ev=PageView&noscript=1" />
+    </noscript>
+    <!-- End Meta Pixel Code -->
 
     <style>
       body {
@@ -58,7 +91,6 @@
       }
     </style>
   </head>
-
   <body>
     <!-- Google Tag Manager (noscript) -->
     <noscript>
@@ -77,38 +109,10 @@
       <a class="cta" href="https://wa.me/971588134631" target="_blank" onclick="fbq('trackCustom', 'WhatsAppClick');">
         Book Now via WhatsApp
       </a>
-      <a class="cta" href="https://www.instagram.com/your_therapist100?igsh=amRwbDdvMGFxZjFt&utm_source=qr" target="_blank">
-        Follow on Instagram
-      </a>
     </main>
 
     <footer>
       <p style="text-align:center">&copy; 2025 Leila Massage Dubai. All rights reserved.</p>
     </footer>
-
-    <!-- Meta Pixel Code -->
-    <script>
-      !function(f,b,e,v,n,t,s){
-        if(f.fbq)return;n=f.fbq=function(){
-          n.callMethod? n.callMethod.apply(n,arguments):n.queue.push(arguments)
-        };
-        if(!f._fbq)f._fbq=n;
-        n.push=n;
-        n.loaded=!0;
-        n.version='2.0';
-        n.queue=[];
-        t=b.createElement(e);t.async=!0;
-        t.src=v;s=b.getElementsByTagName(e)[0];
-        s.parentNode.insertBefore(t,s)
-      }(window, document,'script','https://connect.facebook.net/en_US/fbevents.js');
-
-      fbq('init', '671588939001650');
-      fbq('track', 'PageView');
-    </script>
-    <noscript>
-      <img height="1" width="1" style="display:none"
-           src="https://www.facebook.com/tr?id=671588939001650&ev=PageView&noscript=1" />
-    </noscript>
-    <!-- End Meta Pixel Code -->
   </body>
 </html>
